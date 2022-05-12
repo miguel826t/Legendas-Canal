@@ -1,0 +1,288 @@
+<?xml version="1.0" standalone="no"?>
+<mlt LC_NUMERIC="C" version="7.5.0" title="Shotcut version 22.01.30" producer="main_bin">
+  <profile description="automatic" width="1280" height="720" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="30000" frame_rate_den="1001" colorspace="709"/>
+  <playlist id="main_bin">
+    <property name="xml_retain">1</property>
+  </playlist>
+  <producer id="black" in="00:00:00.000" out="00:01:57.190">
+    <property name="length">00:01:57.224</property>
+    <property name="eof">pause</property>
+    <property name="resource">0</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgba</property>
+    <property name="set.test_audio">0</property>
+  </producer>
+  <playlist id="background">
+    <entry producer="black" in="00:00:00.000" out="00:01:57.190"/>
+  </playlist>
+  <chain id="chain0" out="00:00:15.816">
+    <property name="length">00:00:15.849</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/migue/Videos/Churcill/1-FaloPrimeiraVez.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">-1</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">dfc8fd712bf06f3151e1c60afa2ce4f8</property>
+    <property name="shotcut:caption">1-FaloPrimeiraVez.mp4</property>
+    <property name="shotcut:defaultAudioIndex">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter0" out="00:00:15.816">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">4.4</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+    <filter id="filter1" out="00:00:15.816">
+      <property name="mlt_service">ladspa.1410</property>
+      <property name="0">33.6</property>
+      <property name="1">23520</property>
+      <property name="2">-70</property>
+      <property name="3">250.008</property>
+      <property name="4">1500.5</property>
+      <property name="5">2001</property>
+      <property name="6">-90</property>
+      <property name="instances">2</property>
+    </filter>
+  </chain>
+  <playlist id="playlist0">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V1</property>
+    <entry producer="chain0" in="00:00:00.000" out="00:00:15.816"/>
+  </playlist>
+  <chain id="chain1" out="00:05:27.528">
+    <property name="length">00:05:27.561</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/migue/Downloads/BLOOD, TOIL, TEARS AND SWEAT speech Winston Churchill.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">-1</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">03b38cc896ae81bd8605e510cc4bc078</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">BLOOD, TOIL, TEARS AND SWEAT speech Winston Churchill.mp4</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:defaultAudioIndex">1</property>
+    <filter id="filter2" in="00:03:30.297" out="00:04:46.513">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">9.9</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+    <filter id="filter3" in="00:03:30.297" out="00:04:46.513">
+      <property name="mlt_service">ladspa.1410</property>
+      <property name="0">33.6</property>
+      <property name="1">23520</property>
+      <property name="2">-70</property>
+      <property name="3">250.008</property>
+      <property name="4">1500.5</property>
+      <property name="5">2001</property>
+      <property name="6">-90</property>
+      <property name="instances">2</property>
+    </filter>
+  </chain>
+  <playlist id="playlist1">
+    <property name="shotcut:audio">1</property>
+    <property name="shotcut:name">A1</property>
+    <blank length="00:00:16.984"/>
+    <entry producer="chain1" in="00:03:30.297" out="00:04:46.513"/>
+  </playlist>
+  <chain id="chain2" out="00:01:32.299">
+    <property name="length">00:01:32.332</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/migue/Videos/Churcill/THEIR FINEST HOUR.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">260ceb248a9cbc826e201895c88546d4</property>
+    <property name="shotcut:caption">THEIR FINEST HOUR.mp4</property>
+    <property name="xml">was here</property>
+    <filter id="filter4" out="00:00:15.482">
+      <property name="mlt_service">ladspa.1410</property>
+      <property name="0">33.6</property>
+      <property name="1">23520</property>
+      <property name="2">-70</property>
+      <property name="3">250.008</property>
+      <property name="4">1500.5</property>
+      <property name="5">2001</property>
+      <property name="6">-90</property>
+      <property name="instances">2</property>
+    </filter>
+    <filter id="filter5" out="00:00:15.482">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">17</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+  </chain>
+  <playlist id="playlist2">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V2</property>
+    <blank length="00:01:36.970"/>
+    <entry producer="chain2" in="00:00:00.000" out="00:00:15.482"/>
+  </playlist>
+  <chain id="chain3" out="00:03:20.187">
+    <property name="length">00:03:20.220</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/migue/Videos/Churcill/yt1s.com - Twelve Titans Music  Day One Epic Dramatic Orchestral.mp3</property>
+    <property name="mlt_service">avformat</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">-1</property>
+    <property name="mute_on_pause">1</property>
+    <property name="video_delay">0</property>
+    <property name="shotcut:hash">270b5fd6d144f83fff0f0eb6a0c0aa82</property>
+    <property name="shotcut:defaultAudioIndex">0</property>
+    <property name="shotcut:caption">yt1s.com - Twelve Titans Music  Day One Epic Dramatic Orchestral.mp3</property>
+    <property name="xml">was here</property>
+    <filter id="filter6" in="00:00:48.048" out="00:02:21.255">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0.5</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+    <filter id="filter7" in="00:00:48.048" out="00:02:21.255">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:01:03.837=0;00:01:33.200=-60</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeOutVolume</property>
+      <property name="shotcut:animOut">881</property>
+    </filter>
+  </chain>
+  <playlist id="playlist3">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V3</property>
+    <entry producer="chain3" in="00:00:48.048" out="00:02:21.255"/>
+  </playlist>
+  <playlist id="playlist4">
+    <property name="shotcut:audio">1</property>
+    <property name="shotcut:name">A2</property>
+    <blank length="00:00:00.033"/>
+  </playlist>
+  <chain id="chain4" out="00:03:20.187">
+    <property name="length">00:03:20.220</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/migue/Videos/Churcill/yt1s.com - Twelve Titans Music  Day One Epic Dramatic Orchestral.mp3</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">-1</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">270b5fd6d144f83fff0f0eb6a0c0aa82</property>
+    <property name="shotcut:caption">yt1s.com - Twelve Titans Music  Day One Epic Dramatic Orchestral.mp3</property>
+    <property name="xml">was here</property>
+    <filter id="filter8" in="00:02:21.288" out="00:03:20.187">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">0.5</property>
+      <property name="mlt_service">volume</property>
+    </filter>
+    <filter id="filter9" in="00:02:21.288" out="00:03:20.187">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="level">00:00:00.000=-60;00:00:06.740=0</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">fadeInVolume</property>
+      <property name="shotcut:animIn">203</property>
+    </filter>
+  </chain>
+  <playlist id="playlist5">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V4</property>
+    <blank length="00:00:58.292"/>
+    <entry producer="chain4" in="00:02:21.288" out="00:03:20.187"/>
+  </playlist>
+  <tractor id="tractor0" title="Shotcut version 22.01.30" in="00:00:00.000" out="00:01:57.190">
+    <property name="shotcut">1</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">0</property>
+    <property name="shotcut:scaleFactor">0.719992</property>
+    <track producer="background"/>
+    <track producer="playlist0"/>
+    <track producer="playlist1" hide="video"/>
+    <track producer="playlist2"/>
+    <track producer="playlist3"/>
+    <track producer="playlist4" hide="video"/>
+    <track producer="playlist5"/>
+    <transition id="transition0">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition1">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="version">0.1</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">1</property>
+    </transition>
+    <transition id="transition2">
+      <property name="a_track">0</property>
+      <property name="b_track">2</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition3">
+      <property name="a_track">0</property>
+      <property name="b_track">3</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition4">
+      <property name="a_track">1</property>
+      <property name="b_track">3</property>
+      <property name="version">0.1</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition5">
+      <property name="a_track">0</property>
+      <property name="b_track">4</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition6">
+      <property name="a_track">1</property>
+      <property name="b_track">4</property>
+      <property name="version">0.1</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition7">
+      <property name="a_track">0</property>
+      <property name="b_track">5</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition8">
+      <property name="a_track">0</property>
+      <property name="b_track">6</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition9">
+      <property name="a_track">1</property>
+      <property name="b_track">6</property>
+      <property name="version">0.1</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">0</property>
+    </transition>
+  </tractor>
+</mlt>
